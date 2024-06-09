@@ -12,7 +12,7 @@ pipeline {
             }
         }
         stage('Deploy') {
-            sh 'echo This is Build'
+            sh 'echo This is Deploy'
         }
     }
 }
