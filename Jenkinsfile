@@ -33,7 +33,7 @@ pipeline {
        }
        stage('print param') {
         steps {
-            echo "Hello: ${param.PERSON}"
+            echo "Hello ${param.PERSON}"
             echo "Biography: ${param.BIOGRAPHY}"
             echo "Toggle: ${param.TOGGLE}"
             echo "Choice: ${param.CHOICE}"
