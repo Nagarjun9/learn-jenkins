@@ -45,5 +45,16 @@ pipeline {
                 echo "Password: ${params.PASSWORD}"
            }
        }
+       post {
+        always {
+            echo 'I will always say Hellow again'
+        }
+        success {
+            echo 'I will run when pipeline is success'
+        }
+        failure {
+            echo 'I will run when pipeline is failed'
+        }
+       }
    }
 }
