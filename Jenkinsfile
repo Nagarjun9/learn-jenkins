@@ -32,13 +32,13 @@ pipeline {
            }
        }
        stage('print param') {
-        steps {
-            echo "Hello ${param.PERSON}"
-            echo "Biography: ${param.BIOGRAPHY}"
-            echo "Toggle: ${param.TOGGLE}"
-            echo "Choice: ${param.CHOICE}"
-            echo "Password: ${param.PASSWORD}"
-        }
+            steps {
+                echo "Hello ${params.PERSON}"
+                echo "Biography: ${params.BIOGRAPHY}"
+                echo "Toggle: ${params.TOGGLE}"
+                echo "Choice: ${params.CHOICE}"
+                echo "Password: ${params.PASSWORD}"
+           }
        }
    }
 }
