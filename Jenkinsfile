@@ -52,7 +52,7 @@ pipeline {
                 echo 'its run when job success'
             }
             failure {
-                echo 'its run when job failed'
+                echo 'its run when job failers'
             }
         }
     }
